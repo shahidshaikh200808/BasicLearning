@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .box {
+            background-color: rgb(128, 128, 128);
+            background-image: url("https://plus.unsplash.com/premium_photo-1673292293042-cafd9c8a3ab3?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-position: top;
+            background-blend-mode: hard-light;            
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            transition: all 1s;
+            color: aliceblue;
+
+        }
+
+        .box:hover {
+            background-position: center;
+            background-color: aliceblue;
+
+        }
+
+        .rightarea {
+            display: grid;
+            padding: 13px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 120px;
+            width: 50%;
+            gap: 5px;
+
+
+        }
+
+        #col2 {
+            grid-column: span 2;
+        }
+
+        #row2 {
+            grid-row: span 2/auto;
+        }
+
+        body {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftarea">
+            <h1 class="heading">Gallery</h1>
+            <p class="subheading">Nature refers to the physical world and life </p>
+        </div>
+        <div class="rightarea">
+            <div class="box" id="row2">BOX1</div>
+            <div class="box" id="col2">BOX2</div>
+            <div class="box">BOX3</div>
+            <div class="box" id="row2">BOX4</div>
+            <div class="box" id="col2">BOX5</div>
+            <div class="box">BOX6</div>
+            <div class="box" id="col2">BOX7</div>
+        </div>
+</body>
+
+</html>

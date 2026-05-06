@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{            
+            height: 100vh;
+
+            /* box display aligment*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box{
+            border: 1px solid green;            
+            width: 200px;
+            height: 200px;
+
+            /* text aligment*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+    </div>
+</body>
+</html>
