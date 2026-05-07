@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 
 <head>
-    <title>login form</title>
-    <link rel="stylesheet" href="">
+    <title>>Login form</title>
+    <link rel="stylesheet" href="#">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
+        body {
+            background: blue;
 
+            align-items: center;
+            justify-content: center;
+            
+
+            height: 100vh;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            background: purple;
+
+            padding: 30px 40px;
+            border-radius: 10px;
+
+            color: #fff;
+            width: 400px;
+             
+        }
+
+        .login-container h1 {
+            text-align: center;
+
+            color: #fff;
+            font: size 40px;
+        }
+
+        .login-container .input-form {
+            position: relative;
+
+            width: 100%;
+            height: 40px;
+            margin: 30px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+
+            background: transparent;
+            border: none;
+            border: 2px solid rgba(255, 255, 255, .0);
+            border-radius: 30px;
+
+            color: #fff
+        }
+
+        .input-box input::placeholder {
+            color: #fff;
+            margin-left: 10px;
+        }
+
+        input-box i {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+
+            font-size: 20px;
+            transform: translate(-50%);
+        }
+
+        .remember {
+            display: flex;
+
+            justify-content: space-between;
+            font-size: 15px;
+            margin: -15px 0 15px;
+        }
+
+        .remember label input {
+            color: #fff;
+            margin-right: 3px;
+        }
+
+        .remember a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .remember a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            width: 100%;
+            height: 40px;
+
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            cursor: pointer;
+
+            color: #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .reg-link {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .reg-link p a {
+            color: #fff;
+
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .reg-link p a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -14,8 +132,20 @@
         <form name="login-form" action="" method="">
             <h1>Login</h1>
             <div class="input-form">
-                <input type="text" name="username" placeholder="username" required>
-                <i class="bx bx-user" />
+                <input type="text" name="Username" placeholder="Username" required>
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-form">
+                <input type="password" name="Password" placeholder="Password" required>
+                <i class="bx bx-lock" /></i>
+            </div>
+            <div class="remember">
+                <label><input type="checkbox">Remember me</label>
+                <a href="">Forget password</a>
+            </div>
+            <button type="button" class="btn">Login</button>
+            <div class="reg-link">
+                <p>Don't Have An Account?<a href="">Register</a></p>
             </div>
     </div>
 </body>
