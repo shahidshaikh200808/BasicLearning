@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            display: flex;
+            padding: 6px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        var count = 0;
+
+        function increament(){
+            count = count + 1;
+            document.getElementById("demo").innerHTML=count;
+        }
+        function decreament(){
+            if(count > 0){
+                count = count - 1;
+            }
+            document.getElementById("demo").innerHTML=count;
+        }
+    </script>
+</head>
+<body>
+    
+
+    <button  onclick="increament()">+</button>
+    <p id="demo">0</p>
+    <button  onclick="decreament()">-</button>
+</body>
+</html>
