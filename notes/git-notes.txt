@@ -1,0 +1,40 @@
+Project Path: C:\Shahid2\BasicLearning
+CD => Change Directory(folder)
+
+git commands
+git init =>  git initialize
+git add .
+git commit -m "first commit"
+
+git config --global user.email "shahidshaikh200808@gmail.com"
+git config --global user.name "shahidshaikh200808"
+
+git clone https://github.com/shahidshaikh200808/BasicLearning
+
+
+git add .
+git commit -m "working on login"
+git push
+
+
+Dos Commands
+CD <DirectoryName> Change the directory
+CD.. Change the previous Directory
+CD\ Change the first Drive
+CMD in address bar
+
+
+example
+C:\Shahid2\BasicLearning>cd..
+C:\Shahid2>cd basiclearning
+C:\Shahid2\BasicLearning>cd\
+C:\>cd shahid2
+C:\Shahid2>cd b*
+C:\Shahid2\BasicLearning>cd ..
+C:\Shahid2>cd B*
+C:\Shahid2\BasicJavaScript>cd..
+C:\Shahid2>cd basicl*
+C:\Shahid2\BasicLearning>cd/
+C:\>cd shahid*
+C:\Shahid2>cd basi*
+C:\Shahid2\BasicLearning>
