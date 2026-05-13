@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="timing"></p>
+    <p id="demo"></p>
+    <!-- Class day monday, tuesday, wednesday.-->
+     <!-- Practice Day thrudsay & Friday.-->
+      <!-- Holiday saturday and sunday.-->
+
+      <script>
+        var date = new Date().getDay();
+
+
+        let indicator = "";
+        switch(date){
+            case 0: // sunday
+            case 6: // saturday
+                indicator = "Holiday";
+                break;
+            case 1: // monday
+            case 2: // tuesday
+            case 3: // wed
+                indicator = "Class Day";
+                break;
+            default:
+                indicator = "Practice Day";
+                break;
+
+        }
+
+        document.getElementById("timing").innerHTML = new Date();
+        document.getElementById("demo").innerHTML = indicator;
+
+      </script>
+</body>
+</html>
