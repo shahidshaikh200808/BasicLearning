@@ -1,0 +1,2 @@
+//Understand:-  let, const, if, eles, comment, elseif, turnary
+//Not understand:-  switch, statment

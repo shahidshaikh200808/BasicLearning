@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 10; // number
+        let b = "shahid" // string
+        let c = 10.5; // number
+        let d = false; // boolean;
+
+        let age = 9;
+        let isLogged = age >= 18 ? true : false;
+
+        if(isLogged){
+            console.log("Yo can access your profile.")
+        }else{
+            console.log("Yo can't access your profile.")
+        }
+
+        let age1 = 18;
+        let age2 = '18';
+
+        let result = age1 == age2;
+
+        console.log(result);
+
+        if(age1 == age2){
+            console.log("both are same");
+        }
+
+
+        console.log(true == true); // true
+        console.log(true == 'true'); // false
+        console.log(15 === '15'); // false
+        console.log(true === 'true'); // false
+        console.log(true === true); // true
+
+
+        let x = 7;
+        
+        if(x == 6)
+            console.log("x == 6");
+
+        if(x != 6)
+            console.log("x != 6");
+
+        if(x > 6)
+            console.log("x > 6");
+
+        if(x < 6)
+            console.log("x < 6");
+        
+
+        let y = "fjdkafj"; // take value, true, 'true', 8, 8.5, -8, [], {}
+        if(y)
+            console.log("always true on take value, true, 'true', 8, 8.5, -8, [] {} ");
+
+        let z = ""; // take empty value, false, null, "", undefined;
+        if(!z)
+            console.log("always false: take empty, false, null, '', undefined;");
+
+
+            //== value check 6 == 6 true, 6 == '6' true
+            //=== value check 6 === 6 true, 6 === '6' false
+
+            if(!(6 === '6')){
+                console.log("!(6 === '6')");
+            }
+
+            if(!(false)){
+                console.log("!(false)");
+            }
+
+            
+    </script>
+</body>
+</html>

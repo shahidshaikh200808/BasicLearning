@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <div id="salary"></div>
+    <div id="bonus"></div>
+    <div id="total"></div>
+    <script>
+
+        let emp = '1000' // pion| 10, developer| 20, Manager | 30
+        let salary = 10000;
+
+        let bonus = 0;
+
+        //check the bonus using switch
+        switch(emp){
+            case "pion":
+                bonus = salary * 10/100;
+                console.log("Bonus of pion");
+                break;
+            case "developer":
+                bonus = salary * 20/100;
+                console.log("Bonus of developer");
+                break;
+            case '1000':
+                bonus = salary * 40/100;
+                console.log("Bonus of 1000");
+                break;
+            default:
+                bonus = 0;
+                console.log("no bonus");
+                break;
+        }
+        total = salary + bonus;
+
+        console.log("Total Salary: - " + salary);
+
+        document.getElementById("salary").innerText = "Salary:- " + salary;
+        document.getElementById("bonus").innerText = "Bonus:- " +  bonus;
+        document.getElementById("total").innerText = "total:- " + total;
+
+    </script>
+</body>
+</html>
