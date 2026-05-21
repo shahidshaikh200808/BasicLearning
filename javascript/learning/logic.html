@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write programm to allow vote age 18
+        let age = 15;
+        if(age >= 18){
+            console.log("You will vote or you vote.");
+
+            //age 18 to 35 go to vote on room number A
+            //age 36 to 50 go to vote on room number B
+            //and ther in room number C
+            /*
+            if(age >= 18 && age <= 35){
+                console.log("go to room number A");
+            }
+
+            if(age >= 36 && age <= 50){
+                console.log("go to room number B")
+            }
+
+            if(age >= 51){
+                console.log("go to room number C");
+            }
+            */
+            if(age >= 18 && age <= 35){
+                console.log("go to room number A");
+            }else if(age >= 36 && age <= 50){
+                console.log("go to room number B")
+            }else{
+                console.log("go to room number C");
+            }
+            
+        }else{
+            console.log("you can not vote. becuase your age is less than 18");
+        }  
+        
+        // if(age >= 18 && age <= 35){
+        //     console.log("go to room number A");
+        // }else if(age >= 36 && age <= 50){
+        //     console.log("go to room number B")
+        // }else if(age > 50){
+        //     console.log("go to room number C");
+        // }
+
+    </script>
+</body>
+</html>
