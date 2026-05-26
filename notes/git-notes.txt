@@ -1,4 +1,4 @@
-Project Path: C:\Shahid2\BasicLearning
+giProject Path: C:\Shahid2\BasicLearning
 CD => Change Directory(folder)
 
 git commands
