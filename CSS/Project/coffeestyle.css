@@ -7,8 +7,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-:roots {
-    /*Colors*/
+:root {
     --white-color: #fff;
     --dark-color: #252525;
     --primary-color: #3b141c;
@@ -16,7 +15,6 @@
     --light-pink-color: #faf4f5;
     --medium-grey-color: #ccc;
 
-    /*Font Size*/
     --font-size-s: 0.9rem;
     --font-size-n: 1rem;
     --font-size-m: 1.12rem;
@@ -24,24 +22,35 @@
     --font-size-xl: 2rem;
     --font-size-xxl: 2.3rem;
 
-    /*Font Weight*/
-    --font-weight-normal: 400;
+    --font-weight-normal-: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 
-    /*Border Radius*/
     --border-radius-s: 8px;
     --border-radius-m: 30px;
     --border-radius-circle: 50%;
 
-    /*Site Max Width*/
-    --site-max-width: 1300px;
+    --site-max-width:1300px;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+} 
+ 
 header {
-    background: var(--primary-color);
-}                  
- .navbar .nav-menu .nav-link{
+    background: var(--primary color);
+}
+
+.navbar .nav-logo .logo-text {
     color: var(--white-color);
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--white-color);
+
 }
