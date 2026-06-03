@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Do While</title>
+</head>
+<body>
+    <div id="login"></div>
+    <script>
+        let password = '';
+        let loginText = "";
+        // if(password == "123"){
+        //     loginText = "Welcome to site.";
+        // }else{
+        //     loginText = "Incorrect password";
+        // }
+
+        
+        do{
+            password = prompt("Please enter your password.");            
+        }while(password != "123");
+
+        if(password == "123"){
+            loginText = "Welcome to site.";
+        }else{
+            loginText = "Incorrect password";
+        }
+
+        document.getElementById("login").innerHTML = loginText
+    </script>
+</body>
+</html>
