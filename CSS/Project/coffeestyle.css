@@ -169,6 +169,11 @@ header .navbar {
     margin-right: 30px;
 }
 
+/* About section styling*/
+.about-section {
+
+}
+
 /* Responsive media query code for max width 900px */
 @media screen and (max-width: 900px) {
     :root {
