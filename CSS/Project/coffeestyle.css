@@ -116,7 +116,11 @@ header .navbar {
 
 }
 
-.navbar :where(#menu-close-button, #menu-open-button) {
+.navbar #menu-close-button, .navbar #menu-open-button {
+    display: none;
+}
+
+.navbar:where(#menu-close-button, #menu-open-button) {
     display: none;
 }
 
@@ -238,14 +242,21 @@ header .navbar {
 }
 
 /* Menu Section Styling */
-.menu-section .menu-list{
-    display: flex;
-    flex-wrap:wrap;
-    gap:110px;
-    align-items: center;
+.menu-section {
+    color: var(--white-color);
+    background: var(--dark-color);
+    padding:50px 0 100px;
 }
 
-.menu-section .menu-list .menu-item{
+.menu-section .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-section .menu-list .menu-item {
     display: flex;
     align-items: center;
     text-align: center;
@@ -254,11 +265,35 @@ header .navbar {
     width: calc(100% / 3 - 110px);
 }
 
-.menu-section .menu-list .menu-item .menu-image{
+.menu-section .menu-list .menu-item .menu-image {
     max-width: 83%;
     aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
 }
-/* Responsive media query code for max width 900px */
+
+.menu-section .menu-list .menu-item .name {
+    margin: 12px 0;
+    font-size: var(--font-size-l);
+    font-weight:var(--font-weight-semibold);
+}
+
+.menu-section .menu-list .menu-item .name {
+    font-size: var(--font-size-m);
+}
+
+/* Responsive media query code for max width 1024px  */
+@media screen and (max-width: 1024px) {
+    .menu-section .menu-list {
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: calc(100% / 3 - 60px);
+    }
+}
+
+/* Responsive media query code for max width 900px  */
 @media screen and (max-width: 900px) {
 
     :root {
@@ -277,6 +312,10 @@ header .navbar {
         width: 100%;
         backdrop-filter: blur(5px);
         background: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar #menu-close-button, .navbar #menu-open-button {
+        display: block;
     }
 
     .navbar :where(#menu-close-button, #menu-open-button) {
