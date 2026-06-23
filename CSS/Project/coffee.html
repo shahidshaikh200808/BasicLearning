@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Website | CodingNepal</title>
-    <link href="coffeestyle.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Linking Font Awesome For Icons -->
+    <link rel="stylesheet" href="https://cdjns.cloudflare.com/ajax/libs/
+    font-awesome/6.6.0/css/all.min.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="coffeestyle.css">
 </head>
 
 <body>
@@ -151,46 +153,57 @@
         <section class="testimonials-section">
             <h2 class="section-title">Testimonials</h2>
             <div class="section-content">
-                <div class="slider-container">
-                    <div class="slider-wrapper"></div>
-                    <ul class="testimonials-list">
-                        <li class="testimonials">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                    <ul class="testimonials-list swiper-wrapper">
+                        <li class="testimonials swiper-slide">
                             <img src="images/user-1.jpg" alt="User" class="user-image">
                             <h3 class="name">Sarah Johnson</h3>
                             <i class="feedback">"Loved the french roast. Perfectly
                             balanced and rich. Will order again."</i>
                         </li>
-                        <li class="testimonials">
+                        <li class="testimonials swiper-slide">
                             <img src="images/user-2.jpg" alt="User" class="user-image">
                             <h3 class="name">James Wilson</h3>
                             <i class="feedback">"Great espresso blend! Smooth and bold 
                             flavor. Fast shipping too!." </i>
                         </li>
-                        <li class="testimonials">
+                        <li class="testimonials swiper-slide">
                             <img src="images/user-3.jpg" alt="User" class="user-image">
                             <h3 class="name">Micheal Brown</h3>
                             <i class="feedback">"Fantastic mocha flavour. Fresh and
                             aromatic. Quick shipping!."</i>
                         </li>
-                        <li class="testimonials">
+                        <li class="testimonials swiper-slide">
                             <img src="images/user-4.jpg" alt="User" class="user-image">
                             <h3 class="name">Emilly Harries</h3>
                             <i class="feedback">"Execellent quality! Fresh beans and 
                             quick delivery. Highly recommend."</i>
                         </li>
-                         <li class="testimonials">
+                        <li class="testimonials swiper-slide">
                             <img src="images/user-5.jpg" alt="User" class="user-image">
                             <h3 class="name">Anthony Thompson</h3>
                             <i class="feedback">"Best decaf I've tried! Smooth and
                             flavorful. Arrived promptly."</i>
                         </li>
                     </ul>
+
+
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="coffeescript.js"></script>
+    <!-- Linking Swiper Script -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+ 
+    <!-- Linking Custom Script --> 
+ <script src="coffeescript.js"></script>
 </body>
 
 </html>

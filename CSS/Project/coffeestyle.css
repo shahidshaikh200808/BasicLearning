@@ -286,7 +286,7 @@ header .navbar {
 /* Testimonials Section Styling */
 .testimonials-section {
     padding: 50px 0 100;
-    background:var(--light-pink-color);
+    background: var(--light-pink-color);
 }
 
 .testimonials-section .testimonials {
@@ -294,14 +294,23 @@ header .navbar {
     padding: 35px;
     text-align: center;
     flex-direction: column;
-    align-items: center;        
+    align-items: center;
 }
 
-.testimonials-section .testimonials .user-image{
+.testimonials-section .testimonials .user-image {
     width: 180px;
     height: 180px;
     object-fit: cover;
     border-radius: var(--border-radius-circle);
+}
+
+.testimonials-section .testimonials .name {
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+}
+
+.testimonials-section .testimonials .feedback {
+    line-height: 25px;
 }
 
 /* Responsive media query code for max width 1024px  */
@@ -416,12 +425,13 @@ header .navbar {
         max-width: 250px;
         aspect-ratio: 1;
     }
-    .menu-section .menu-list{
+
+    .menu-section .menu-list {
         gap: 30px;
     }
 
-    .menu-section .menu-list .menu-item{
-        width:calc(100% / 2 - 30px);
+    .menu-section .menu-list .menu-item {
+        width: calc(100% / 2 - 30px);
     }
 
     .menu-section .menu-list .menu-item .menu-image {
