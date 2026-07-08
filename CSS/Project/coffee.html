@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Website | CodingNepal</title>
     <!-- Linking Font Awesome For Icons -->
-    <link rel="stylesheet" href="https://cdjns.cloudflare.com/ajax/libs/
-    font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- Linking Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="coffeestyle.css">
@@ -24,30 +23,30 @@
                 <button id="menu-close-button" class="fas fa-times"></button>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link">HOME</a>
+                    <a href="#" class="nav-link">HOME</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link">ABOUT</a>
-                </li>
-
-
-                <li class="nav-item">
-                    <a href="" class="nav-link">MENU</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="" class="nav-link">TESTIMONIALS</a>
+                    <a href="#about" class="nav-link">ABOUT</a>
                 </li>
 
 
                 <li class="nav-item">
-                    <a href="" class="nav-link">GALLERY</a>
+                    <a href="#menu" class="nav-link">MENU</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">TESTIMONIALS</a>
                 </li>
 
 
                 <li class="nav-item">
-                    <a href="" class="nav-link">CONTACT</a>
+                    <a href="#gallery" class="nav-link">GALLERY</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACT</a>
                 </li>
             </ul>
             <button id="menu-open-button" class="fas fa-bars"></button>
@@ -76,7 +75,7 @@
         </section>
 
         <!-- About Section -->
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <div class="about-image">
@@ -97,14 +96,14 @@
                         <a href="" class="social-link"><i class="fa-brands
                          fa-instagram"></i></a>
                         <a href="" class="social-link"><i class="fa-brands
-                         fa-twitter"></i></a>
+                         fa-x-twitter"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Menu Section -->
-        <section class="menu-section">
+        <section class="menu-section" id="menu">
             <h2 class="section-title">Our Menu</h2>
             <div class="section-content">
                 <ul class="menu-list">
@@ -150,7 +149,7 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="testimonials">
             <h2 class="section-title">Testimonials</h2>
             <div class="section-content">
                 <div class="slider-container swiper">
@@ -201,7 +200,7 @@
         </section>
 
         <!-- Gallery Section -->
-        <section class="gallery-section">
+        <section class="gallery-section" id="gallery">
             <h2 class="section-title">GALLERY</h2>
             <div class="section-content">
                 <ul class="gallery-list">
@@ -226,6 +225,72 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">CONTACT US</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>123 Campsite Avenue,Wilderness, CA 98765</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@coffeeshopwebsite.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(123) 456-78909</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Saturday: 10:00 AM - 3:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Sunday : Closed</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.codingnepalweb.com</p>
+                    </li>
+                </ul>
+
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Your Name" class="form-input" required>
+                    <input type="email" placeholder="Your Email" class="form-input" required>
+                    <textarea placeholder="Your Message" class="form-input" required></textarea>
+                    <button class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">2026 Coffee Shop</p>
+
+                <div class="social-link-list">
+                    <a href="" class="social-link"><i class="fa-brands
+                         fa-facebook"></i></a>
+                    <a href="" class="social-link"><i class="fa-brands
+                         fa-instagram"></i></a>
+                    <a href="" class="social-link"><i class="fa-brands
+                         fa-x-twitter"></i></a>
+                </div>
+
+                <p class="policy-link">
+                    <a href="#" class="policy-link">Privacy Policy</a>
+                    <span class="separator"></span>
+                    <a href="#" class="policy-link">Refund Policy</a>
+                </p>
+            </div>
+        </footer>
     </main>
 
     <!-- Linking Swiper Script -->
