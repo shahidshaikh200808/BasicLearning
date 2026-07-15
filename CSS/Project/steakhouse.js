@@ -1,5 +1,21 @@
 /*=============== SHOW & CLOSE MENU ===============*/
+const navMenu = document.gatElementById('nav-menu'),
+      navToggle = document.gatElementById('nav-toggle'),
+      navClose = document.gatElementById('nav-close'),
 
+/* Show menu */
+if(navToggle){
+   navToggle.addEventListener('click', () =>{
+      navMenu.classList.add('show-menu')  
+   })
+}
+
+/* Hide menu */
+if(navClose){
+   navClose.addEventListener('click', () =>{
+      navMenu.classList.remove('show-menu')  
+   })
+}
 
 /*=============== REMOVE MOBILE MENU ===============*/
 
