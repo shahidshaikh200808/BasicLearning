@@ -23,14 +23,7 @@
    <body>
       <!--==================== HEADER & NAV ====================-->
       <header class="header" id="header">
-         
-      
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME SECTION ====================-->
-         <section class="home" id="home">
-            <nav class="nav container">
+         <nav class="nav container">
                <a href="/CSS/Project/steakhouse.html" class="nav__logo">BARBERSHOP</a>
 
                <div class="nav__menu" id="nav-menu">
@@ -67,13 +60,32 @@
                </div>
                
                <!-- Toggle -->
-                <button class="nav__toggle" id="nav__toggle">
+                <button class="nav__toggle" id="nav-toggle">
                      <i class="ri-apps-2-fill"></i>
                 </button>
             </nav>
          </section>
          </main>
-</header>
+   </header>
+      
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME SECTION ====================-->
+         <section class="home" id="home">
+            <img src="/CSS/Project/images2/home-bg.png" alt="" class="home__bg">
+            <div class="home__shadow"></div>
+
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <img src="/CSS/Project/images2/home-logo.svg" alt="Barbershop" class="home__logo">
+
+                  <h1 class="home__title">HAIRCUT AND BEARD <br> SPECIALISTS</h1>
+                  <p class="home__description">Barbershop specializing in haircuts, fades, classic shaves, and beard design for men. Our team of professional barbers guarantees impeccable results, tailored to your style, personality, and modern tastes.</p>
+                  <a href="#work" class="button">See Our Haircut Work</a>
+               </div>
+            </div>
+         </section>
 
          <!--==================== ABOUT SECTION ====================-->
          <section class="about section" id="about">
@@ -117,6 +129,7 @@
       <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
-      <script src="/CSS/Project/steakhouse.js"></script>
+      <script src="steakhouse.js"></script>
    </body>
+   
 </html>
