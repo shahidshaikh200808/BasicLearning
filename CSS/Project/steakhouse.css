@@ -337,7 +337,47 @@ img {
 }
 
 /*=============== ABOUT SECTION ===============*/
+.about {
+  background-color: var(--brown-color);
+}
 
+.about__container {
+  row-gap: 4rem;
+  padding-bottom: 2.5rem;
+}
+
+.about .section__title {
+  color: var(--white-color);
+}
+
+.about__description {
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about__info {
+  display: flex;
+  justify-content: center;
+  column-gap: 4.5rem;
+}
+
+.about__number {
+  color: var(--first-color);
+  font: var(--font-bold) var(--h1-font-size) var(--second-font);
+  margin-bottom: .5rem;
+}
+
+.about__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+}
+
+.about__img {
+  width: 320px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
 
 /*=============== WORKS SECTION ===============*/
 
@@ -375,7 +415,8 @@ img {
 
 /* For medium devices <> */
 @media (width >= 540px) {
-  .home__container {
+  .home__container,
+  .about__container {
     grid-template-columns: 400px;
     justify-content: center;
   }
