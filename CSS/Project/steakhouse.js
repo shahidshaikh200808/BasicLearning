@@ -39,7 +39,26 @@ const scrollHeader = () =>  {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SWIPER WORKS ===============*/   
+const swiper = new Swiper('.work__swiper', {
+  // Optional parameters
 
+  loop: true,
+   slidesPerView: 'auto',
+   spaceBetween: 24,
+   grabCursor:2,
+
+  // If we need pagination
+  pagination: {
+    el: '.work__data .swiper-pagination',
+    type:'fraction'
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.work__data .swiper-button-next',
+    prevEl: '.work__data .swiper-button-prev',
+  }
+});
 
 /*=============== SWIPER TESTIMONIAL ===============*/
 

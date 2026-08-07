@@ -380,7 +380,23 @@ img {
 }
 
 /*=============== WORKS SECTION ===============*/
+.work {
+  background-color: var(--beige-color);
+}
 
+.work__container {
+  row-gap: 4rem;
+}
+
+.work__description {
+  text-align: center;
+}
+
+.work__img ,
+.work__card {
+  width: 250px;
+  border-radius: 1.5rem;
+}
 
 /* Swiper class */
 
@@ -474,6 +490,40 @@ img {
 
   .home__description {
     margin-bottom: 4rem;
+  }
+
+  .about__container {
+    grid-template-columns: 500px 480px;
+    align-items: center;
+    column-gap: 8rem;
+    padding-block: 3rem;
+  }
+
+  .about__img {
+    width: 500px;
+    order: -1;
+  }
+
+  .about__data .section__title {
+    text-align: initial;
+  }
+
+  .about__description {
+    margin-bottom: 4rem;
+    text-align: initial;
+  }
+
+  .about__info {
+    justify-content: initial;
+  }
+
+  .about__number {
+    font-size: var(--big-font-size);
+    margin-bottom: 1rem;
+  }
+
+  .about__subtitle {
+    font-size: var(--h3-font-size);
   }
 
 }
