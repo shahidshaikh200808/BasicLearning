@@ -399,7 +399,42 @@ img {
 }
 
 /* Swiper class */
+.work__swiper {
+  width: 100%;
+  border-radius: 1.5rem;
+}
 
+.work__data {
+  padding-bottom: 7rem;
+}
+
+.work .swiper-pagination-function {
+  font-weight: var(--font-semi-bold);
+  bottom: 3rem;
+}
+
+.work .swiper-pagination-icon {
+  display: none;
+}
+
+.work :is(.swipper-button-prev, .swiper-buttom-next) {
+  top: initial;
+  left: initial;
+  bottom: .3rem;
+  width: initial;
+  height: initial;
+  margin: initial;
+  color: var(--title-color);
+  font-size: 1.5rem;
+}
+
+.work .swiper-button-prev {
+  left: calc(50% - 3rem);
+}
+
+.work .swiper-button-next {
+  right: calc(50% - 3rem);
+}
 
 /*=============== SERVICES SECTION ===============*/
 
