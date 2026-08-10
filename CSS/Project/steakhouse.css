@@ -402,6 +402,7 @@ img {
 .work__swiper {
   width: 100%;
   border-radius: 1.5rem;
+  display: block;
 }
 
 .work__data {
@@ -413,17 +414,17 @@ img {
   bottom: 3rem;
 }
 
-.work .swiper-pagination-icon {
+.work .swiper-navigation-icon {
   display: none;
 }
 
-.work :is(.swipper-button-prev, .swiper-buttom-next) {
+.work :is(.swiper-button-prev, .swiper-button-next) {
   top: initial;
   left: initial;
-  bottom: .3rem;
+  bottom: .5rem;
   width: initial;
-  height: initial;
-  margin: initial;
+  height: initial ;
+  margin: initial;          
   color: var(--title-color);
   font-size: 1.5rem;
 }
