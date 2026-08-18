@@ -490,7 +490,57 @@ img {
 }
 
 /* Swiper class */
+.service__swiper {
+  width: 100%;
+}
 
+.service .swiper-pagination-bullets {
+  position: absolute;
+  top:initial;
+  left: 0;
+  right: 0;
+  bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  column-gap: .25rem;
+}
+
+.service .swiper-pagination-bullet {
+  width: 24px;
+  height: 3px;
+  border-radius: .5rem;
+  background-color: var(--title-color);
+  transition: opacity .4s, width .4s;
+}
+
+.service .swiper-pagination-bullet-active {
+  width: 32px;
+}
+
+.service .swiper-navigation-icon {
+  display: none;
+}
+
+.service :is(.swiper-button-prev, .swiper-button-next) {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--title-color);
+  border-radius: 50%;
+  color: var(--title-color);
+  font-size: 1rem;
+  top: initial;
+  left: initial;
+  bottom: 2rem;
+  margin: initial;
+}
+
+.service .swiper-button-prev {
+  right: 3.5rem;
+}
+
+.service .swiper-button-next {
+  right: 1rem;
+}
 
 /*=============== EXPERTS SECTION ===============*/
 
@@ -517,7 +567,8 @@ img {
 /* For medium devices <> */
 @media (width >= 540px) {
   .home__container,
-  .about__container {
+  .about__container,
+  .service__container {
     grid-template-columns: 400px;
     justify-content: center;
   }
@@ -649,6 +700,13 @@ img {
   .work__img ,
   .work__card {
     width: 320px;
+  }
+
+  .service__container {
+    grid-template-columns: repeat(2, 450px);
+    align-items: center;
+    column-gap: 2rem;
+    padding-top: 4rem;
   }
 
 }

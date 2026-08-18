@@ -39,13 +39,13 @@ const scrollHeader = () =>  {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SWIPER WORKS ===============*/   
-const swiper = new Swiper('.work__swiper', {
+const swiperWork = new Swiper('.work__swiper', {
   // Optional parameters
 
    loop: true,
    slidesPerView: 'auto',
    spaceBetween: 24,
-   grabCursor:2,
+   grabCursor: 2,
 
   // If we need pagination
   pagination: {
@@ -61,6 +61,25 @@ const swiper = new Swiper('.work__swiper', {
 });
 
 /*=============== SWIPER TESTIMONIAL ===============*/
+const swiperTestimonial = new Swiper('.service__swiper', {
+  // Optional parameters
+
+   loop: true,
+   slidesPerView: 'auto',
+   spaceBetween: 56,
+   grabCursor: 2,
+
+  // If we need pagination
+  pagination: {
+    el: '.service__swiper .swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.service__swiper .swiper-button-next',
+    prevEl: '.service__swiper .swiper-button-prev',
+  }
+});
 
 
 /*=============== SHOW SCROLL UP ===============*/ 
